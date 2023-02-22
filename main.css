@@ -6,8 +6,9 @@ body {
 
 .top_border {
     background: url(./img/car-park-locations.jpg) center; 
-    background-size: cover;
+    background-size: contain;
     height: 200px;
+    margin-top: -35px;
 }
 
 .title {
