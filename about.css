@@ -1,0 +1,17 @@
+.back {
+    animation: slide 1000ms;
+    animation-iteration-count: 1;
+    background-color: aqua;
+    text-align: center;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-100%);
+        opacity: 0.25;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
