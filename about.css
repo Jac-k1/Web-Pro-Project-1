@@ -1,28 +1,15 @@
 .back {
-    animation: back-slide 1000ms;
-    animation-iteration-count: 1;
     border-style: dashed;
     text-align: center;
     margin: 5px;
     background-image: linear-gradient(to right, red, orange,yellow, green, blue, indigo, violet);
     animation: move 35s linear infinite;
-    -webkit-text-stroke: white;
+
 }
 
 @keyframes move {
     to {
         background-position: 4500vh;
-    }
-}
-
-@keyframes back-slide {
-    from {
-        transform: translateX(-100%);
-        opacity: 0.25;
-    }
-    to {
-        transform: translateX(0%);
-        opacity: 1;
     }
 }
 
