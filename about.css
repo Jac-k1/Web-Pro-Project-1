@@ -1,11 +1,62 @@
 .back {
-    animation: slide 1000ms;
+    animation: back-slide 1000ms;
     animation-iteration-count: 1;
-    background-color: aqua;
+    border-style: dashed;
     text-align: center;
+    margin: 5px;
+    background-image: linear-gradient(to right, red, orange,yellow, green, blue, indigo, violet);
+    animation: move 35s linear infinite;
+    -webkit-text-stroke: white;
 }
 
-@keyframes slide {
+@keyframes move {
+    to {
+        background-position: 4500vh;
+    }
+}
+
+@keyframes back-slide {
+    from {
+        transform: translateX(-100%);
+        opacity: 0.25;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.about {
+    animation: about-slide 3000ms;
+    border-style: groove;
+    animation-iteration-count: 1;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+@keyframes about-slide {
+    from {
+        transform: translateX(-100%);
+        opacity: 0.25;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.contact {
+    animation: contact-slide 6000ms;
+    animation-iteration-count: 1;
+    border-style: dotted;
+    border-color: green;
+    text-align: center;
+    margin: 5px;
+}
+
+@keyframes contact-slide {
     from {
         transform: translateX(-100%);
         opacity: 0.25;
