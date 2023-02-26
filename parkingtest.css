@@ -1,10 +1,13 @@
 .parent {
-	background-color: ghostwhite;
 	display: grid;
 	grid-column-gap: .5rem;
 	grid-row-gap: 1rem;
 	grid-template-columns: repeat( 3, 1fr );
-	/*grid-template-rows: 50px 50px;*/
+	margin: 30px;
+}
+body {
+  margin: 30px;
+  
 }
 
 div {
@@ -75,4 +78,14 @@ div div:hover {
     }
     100% {
     }
+  }
+  .footer {
+    position: fixed;
+    height: 30px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
   }
